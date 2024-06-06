@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmytro Lelikov | KP-22</title>
+</head>
+<body>
+
+<!-- Task 1: Find Middle Character -->
+<div>
+    <h2>Task 1 / Find Middle Character</h2>
+    <button onclick="useFindMiddleCharacter()" style="cursor: pointer">Find Middle Character</button>
+</div>
+
+<hr>
+
+<!-- Task 2: Unique Skills -->
+<div>
+    <h2>Task 2 / Unique Skills</h2>
+    <button onclick="useDisplayUniqueSkills()" style="cursor: pointer">Get Unique Skills</button>
+    <p id="uniqueSkillsOutput"></p>
+</div>
+
+<hr>
+
+<!-- Task 2: Total Balance -->
+<div>
+    <h2>Task 2 / Total Balance</h2>
+    <button onclick="useDisplayTotalBalance()" style="cursor: pointer">Get Total Balance</button>
+    <p id="totalBalanceOutput"></p>
+</div>
+
+<hr>
+
+<!-- Task 3: Spread and Rest Operators -->
+<div>
+    <h2>Task 3 / Spread and Rest Operators</h2>
+    <button onclick="useDemonstrateSpreadAndRest()" style="cursor: pointer">Demonstrate Spread and Rest Operators
+    </button>
+    <p id="spreadRestOutput"></p>
+    <code>
+        function demonstrateSpreadAndRest() { <br>
+        const arr1 = [1, 2, 3]; <br>
+        const arr2 = [4, 5, 6]; <br>
+        const combinedArray = [...arr1, ...arr2]; <i>// combining with spread operator</i> <br>
+
+        const numbers = [1, 2, 3, 4, 5]; <br>
+        const sum = (...nums) => nums.reduce((total, num) => total + num, 0); <br>
+        const totalSum = sum(...numbers); <i>// using rest operator to pass any limit of nums</i> <br>
+        } <br>
+    </code>
+
+    <details style="cursor: pointer">
+        <summary>Click to see the difference between spread and rest operators</summary>
+        <p>Spread operator is used to split up array elements or object properties. <br> It is used to split up array
+            elements or object properties. <br> Rest operator is used to merge a list of function arguments into an
+            array. <br>
+            It is used to merge a list of function arguments into an array.</p>
+    </details>
+</div>
+
+<!-- Task 4: Create Usernames List -->
+<div>
+    <h2>Task 4 / Create Usernames List</h2>
+    <button onclick="useCreateUserNamesList(users)" style="cursor: pointer">Create Usernames List</button>
+    <p id="userNamesList" style="cursor: pointer"></p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
